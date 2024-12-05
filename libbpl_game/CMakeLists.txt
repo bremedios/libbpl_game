@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED CONFIG REQUIRED COMPONENTS SDL2)
 find_package(SDL2_ttf REQUIRED CONFIG REQUIRED COMPONENTS SDL2_TTF)
 find_package(SDL2_IMAGE REQUIRED CONFIG REQUIRED COMPONENTS SDL2_image)
 
-include_directories(include)
+include_directories(include "../../libbpl_graphics/libbpl_graphics/include" "../../libbpl_controls/libbpl_controls/include" ../../libbpl_sys/libbpl_sys/include)
 
 set(PUBLIC_HEADER include/bpl/game/GameStateMachine.h
         include/bpl/game/PlatformerToken.h
